@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --color-5: #7BCDBA;
+  --color-3: #BD93D8;
+  --color-2: #9799CA;
+  --color-1: #B47AEA;
+  --color-4: #61E294;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  width: 3.2%;
+  border-radius: 40px;
+  margin-right: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background: var(--color-2) !important;
+}
+
+.navSearch {
+  background: var(--color-2);
+  border: 1px solid var(--color-4) !important;
+  transition: 0.2s all;
+
+}
+
+.navSearch:focus {
+  background: var(--color-5) !important;
+  border: 2px solid var(--color-5);
+}
+
+.btn:hover {
+  background: var(--color-3) !important;
+
+}
+
+.btn {
+  color: black !important;
+  border: 1px solid var(--color-4) !important;
+}
+
+.btn:hover {
+  background: var(--color-4) !important;
+}
+
+.dropdown-menu {
+  background: var(--color-5);
+  transition: 0.2s all;
+}
+
+
+.dropdown-item:hover {
+  background: var(--color-2);
+}
+
+.dropdown-item {
+  transition: 0.2s all;
+  border-radius: 7px;
+}
+
+.rowChild {
+  display: flex;
+  justify-content: center;
+  /* width: -webkit-fill-available;
+  align-items: center; */
+  margin: 30px 0px;
+}
+
+.card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+}
+
+.card-text {
+  text-align: center;
+  height: 96px;
+}
+
+.card-title {
+  height: 72px;
+}
+
+.card {
+  background: var(--color-2);
+  border: 1px solid var(--color-4);
+}
+
+.card-img-top {
+  width: -webkit-fill-available;
+  height: 170px;
+}
+
+.titleCon {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.spinner {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.spinner-border {
+  color: var(--color-4) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  text-align: center;
+  background: var(--color-2);
+  padding: 10px 0px;
+}
+
+.footer-p {
+  margin: 0;
+}
+
+.date {
+  height: auto;
+  width: -webkit-fill-available;
+  margin-bottom: 0;
+  border: 1px solid;
+  border-right: none;
+  border-left: none;
+  margin: 10px 0px;
+  padding: 7px 0px;
+}
+
+.card-text{
+  width: -webkit-fill-available;
 }
